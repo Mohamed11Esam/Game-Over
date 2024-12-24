@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Game Over</title>
+  </head>
+  <body>
+    <section class="games" id="games">
+      <header>
+        <img src="./images/wraper.png" alt="game photo" class="w-100" />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9 mx-auto"
+      >
+        <div class="container">
+          <h5 class="navbar-brand mb-0 text-uppercase text-white">
+            <img
+              src="./images/logo-sm.png"
+              alt="logo"
+              style="max-width: 40px"
+            />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link active text-uppercase"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  aria-current="page"
+                  data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container my-5 home">
+        <section class="position-relative">
+          <div
+            class="row row-cols-1 row-gap-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+            id="gameData"
+          >
+            <!-- <div class="col">
+              <div
+                data-id="$data[i].id"
+                class="card h-100 bg-transparent"
+                role="button"
+              >
+                <div class="card-body">
+                  <figure class="position-relative">
+                    <img
+                      class="card-img-top object-fit-cover h-100"
+                      src="${data[i].tumbnail}"
+                    />
+                  </figure>
+                  <figcaption>
+                    <div class="hstack justify-content-between">
+                      <h3 class="small">${data[i].title}</h3>
+                      <span class="badge text-bg-primary p-2">Free</span>
+                    </div>
+                    <p class="card-text small text-center opacity-50">
+                      ${data[i].short_description.split(" ",8)}
+                    </p>
+                  </figcaption>
+                </div>
+                <footer
+                  class="card-footer small hstack justify-content-between"
+                >
+                  <span class="badge badge-color">${data[i].genre}</span>
+                  <span class="badge badge-color">${data[i].platform}</span>
+                </footer>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </main>
+    </section>
+    <section class="details d-none" id="details">
+      <div class="container">
+        <header class="hstack justify-content-between">
+          <h1 class="text-center h3 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+        <div class="row g-4" id="detailsContent">
+          <!-- <div class="col-md-4">
+            <img src="${data.thumbnail}" class="w-100" alt="image details" />
+         </div>
+         <div class="col-md-8">
+            <h3>Title: ${data.title}</h3>
+            <p>Category: <span class="badge text-bg-info"> ${data.genre}</span> </p>
+            <p>Platform: <span class="badge text-bg-info"> ${data.platform}</span> </p>
+            <p>Status: <span class="badge text-bg-info"> ${data.status}</span> </p>
+            <p class="small">${data.description}</p>
+            <a class="btn btn-outline-warning" target="_blank" href="${data.game_url}">Show Game</a>
+         </div> -->
+        </div>
+      </div>
+    </section>
+    >
+
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
